@@ -6,8 +6,8 @@ namespace Subjects {
       return this._teacher;
     }
 
-    setTeacher(teacher: Teacher) {
-      this._teacher = teacher;
+    setTeacher(teacher:Teacher) {
+      this.teacher = teacher;
     }
   }
 }
