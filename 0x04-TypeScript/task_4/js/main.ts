@@ -5,9 +5,9 @@
 /// <reference path="../js/subjects/React.ts" />
 
 namespace Subjects {
-  export const cpp = new Cpp();
-  export const java = new Java();
-  export const react = new React();
+  const cpp = new Cpp();
+  const java = new Java();
+  const react = new React();
 
   export const cTeacher: Teacher = {
     firstName: "Guillaume",
