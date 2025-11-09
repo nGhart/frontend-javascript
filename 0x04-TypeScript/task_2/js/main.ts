@@ -66,14 +66,14 @@ function workTeacherTasks(): string {
   return "Getting to work";
 }
 
-function isDirector(employee: Teacher | Director): employee is Director {
+export function isDirector(employee: Teacher | Director): employee is Director {
   return (employee as Director).numberOfReports !== undefined;
 }
 
 function executeWork(employee: Teacher | Director): string {
   if (isDirector(employee)) {
-    return workDirectorTasks();
+    return employee.workDirectorTasks();
   } else {
-    return workTeacherTasks();
+    return employee.workTeacherTasks();
   }
 }
